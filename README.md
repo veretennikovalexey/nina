@@ -305,3 +305,11 @@ git push -u origin main
 ```
 Репозиторий опубликован: https://github.com/veretennikovalexey/nina (ветка main). Продолжение на MacBook: `git clone git@github.com:veretennikovalexey/nina.git`, затем открыть Claude Code в папке nina.
 
+_2026-10-25 14:07_ Сессия 1 завершена. Ноут стоит на начале первичной настройки (экран выбора страны). Продолжение с MacBook.
+
+**Установка Claude Code на Mac** (в Терминале):
+```
+curl -fsSL https://claude.ai/install.sh | bash
+```
+Либо через Homebrew: `brew install --cask claude-code`. Затем `cd nina` и `claude`, при первом запуске откроется браузер для входа в аккаунт.
+

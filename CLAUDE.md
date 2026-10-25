@@ -41,3 +41,10 @@
 ## Files
 - `README.md` — the human-readable log for Alex (Russian). Keep appending there.
 - Full unredacted backup of an earlier README version (with off-topic entries) is in the session scratchpad; not important.
+
+## Session 1 ended 2026-10-25 ~14:00
+- Repo published: https://github.com/veretennikovalexey/nina (SSH remote `git@github.com:veretennikovalexey/nina.git`, branch `main`).
+- Alex is switching to a MacBook (Wi-Fi) for the next session; the Ethernet cable moves to the laptop.
+- Alex likes to run shell commands himself from the Claude Code prompt via the `!` prefix (practising git). Offer that instead of running git for him unless asked.
+- Laptop state when session ended: Windows 11 Pro installed, sitting at the start of OOBE (country/region screen). Next: walk through OOBE (see "Next steps" above), decide local vs Microsoft account at the network screen.
+- Keep committing and pushing README.md after each entry so the Mac can pull the latest.
