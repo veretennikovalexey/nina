@@ -1,3 +1,7 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 # Project: Installing Windows 11 on Nina's new ASUS Vivobook
 
 ## Rules for Claude in this project
@@ -7,6 +11,16 @@
 - Ask Alex questions **one at a time**.
 - README.md must contain only things related to the Windows installation. Off-topic answers (chit-chat, Apple vs ASUS, AI models, etc.) go to chat only, not to the file.
 - Alex calls the Claude model "Сказка" (Skazka, "Fable").
+
+## Repo structure and workflow
+This is not a code repo: no build, lint or tests. Two files only.
+- `README.md` (Russian): Steps 0–4 of the install guide, then section `## Журнал вопросов и ответов` at the end. New entries are appended to the very end of the file, each starting with `_YYYY-MM-DD HH:MM_` (timestamp from `date '+%Y-%m-%d %H:%M'`), text in Russian; commands and error messages go in fenced code blocks.
+- `CLAUDE.md` (English): rules + current state. Update "Progress"/"Pending decision"/"Next steps" when the laptop state changes, and add an end-of-session note.
+
+Typical cycle for every answer:
+1. Append entry to README.md.
+2. Reply in chat (Russian, informal).
+3. Commit and push: `git add README.md CLAUDE.md && git commit -m "..." && git push` (Alex may prefer to type these himself via `!`; offer that).
 
 ## Hardware facts
 - ASUS Vivobook, exact model not yet known (sticker on the bottom not checked). Serial number: W6N0CV00X099236.
@@ -23,8 +37,11 @@
 5. **Current position:** at the very beginning of OOBE (country/region screen or just before it).
 6. Alex was about to move the Ethernet cable from the desktop PC to the laptop, so the laptop will have wired internet for OOBE.
 
-## Pending decision
-- **Local account vs Microsoft account** — Alex will decide when the "Let's connect you to a network" screen appears. For a local account: on that screen press Shift+F10 and run `start ms-cxh:localonly`. Reference text already written in README.md.
+## Session 2 (2026-10-25, from MacBook)
+- OOBE finished, desktop reached. Account is **local** (PrincipalSource = Local, checked via Get-LocalUser).
+- Alex wants to do everything on the laptop via PowerShell terminal (Win+X → Terminal (Admin)). Give **one command per message** and **one question per message**.
+- Alex asked how to install Claude Code on the laptop (`irm https://claude.ai/install.ps1 | iex`); he has "another idea", likely to run Claude Code directly on Nina's laptop.
+- Next: find exact model (Get-ComputerInfo), Windows Update loops, ASUS drivers/MyASUS, activation with Pro key.
 
 ## Next steps (OOBE)
 1. Country: Россия → Да. 2. Keyboard: Russian → Да, second layout skip.
