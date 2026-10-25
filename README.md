@@ -298,3 +298,10 @@ git push -u origin main
 ```
 На MacBook: `git clone https://github.com/veretennikovalexey/nina.git`, открыть Claude Code в этой папке.
 
+_2026-10-25 14:04_ Алекс сам выполнил из панели Claude Code (через префикс `!`):
+```
+git remote add origin git@github.com:veretennikovalexey/nina.git
+git push -u origin main
+```
+Репозиторий опубликован: https://github.com/veretennikovalexey/nina (ветка main). Продолжение на MacBook: `git clone git@github.com:veretennikovalexey/nina.git`, затем открыть Claude Code в папке nina.
+
