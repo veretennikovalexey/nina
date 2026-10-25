@@ -279,3 +279,22 @@ _2026-10-25 13:53_ Алекс переносит сетевой кабель с 
 
 _2026-10-25 13:56_ Алекс: сохраняем проект в git-репозиторий «nina», дальше продолжим с MacBook по Wi-Fi.
 
+_2026-10-25 14:01_ Алекс: какие команды git были введены?
+
+**Ответ:** выполнено в папке `C:\Users\mike\nina`:
+```
+git init -b main
+git add README.md CLAUDE.md
+git commit -m "Windows 11 install log for Nina's ASUS Vivobook: README + CLAUDE.md"
+```
+Результат: локальный репозиторий с одним коммитом `3ba2c70` на ветке `main`. На GitHub ещё ничего не отправлено. Чтобы создать репо и запушить:
+```
+gh repo create nina --private --source=. --push
+```
+Либо, если репо создано на сайте вручную:
+```
+git remote add origin https://github.com/veretennikovalexey/nina.git
+git push -u origin main
+```
+На MacBook: `git clone https://github.com/veretennikovalexey/nina.git`, открыть Claude Code в этой папке.
+
